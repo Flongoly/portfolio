@@ -1,0 +1,95 @@
+@import 'colors';
+@import 'variables';
+
+.header {
+    & {
+        color: $grey;
+        background: $light-black;
+        height: 50px;
+        width: 100%;
+        
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        border-bottom: 1px solid $black;
+    }
+    .page-flows {
+        .flow {
+            font-size: 16px;
+            margin: 0 $margin-sm;
+
+            .disable {
+                color: darken($grey, 35%)
+            }
+        }
+    }
+    .searchbar {
+        margin-left: 1%;
+        input {
+            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/ios-search.svg);
+            padding-left: $padding-lg;
+            border-radius: $border-radius;
+            //background-repeat: no-repeat;
+            background-size: 10%;
+            background-position: 5px;
+            color: $black;
+            background: $white;
+            border: none;
+            
+        }
+    }
+    .userbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .userinfo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .userface {
+                img {     
+                    max-width: 35px;
+                    max-height: 35px;
+                    border-radius: 50%;
+
+                }
+            }
+            .username {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.content {
+    background-color: yellow;
+    height: 500px;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.content-left {
+    background-color: blue;
+    height: 100%;
+    width: 15%;
+}
+
+.content-middle {
+    background-color: gray;
+    height: 100%;
+    width: 70%;
+}
+
+.content-right {
+    background-color: pink;
+    height: 100%;
+    width: 15%;
+}
+
+.current-track {
+    background-color: red;
+    height: 50px;
+    width: 100%;
+}
