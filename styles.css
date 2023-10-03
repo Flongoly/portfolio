@@ -1,3 +1,18 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.3.0/nouislider.min.css");
+body {
+  background: rgb(24, 24, 24);
+  font-family: "roboto", sans-serif;
+}
+body a {
+  color: rgb(170, 170, 170);
+}
+body a:hover {
+  color: rgb(200, 200, 200);
+}
+
 .header {
   color: rgb(170, 170, 170);
   background: rgb(40, 40, 40);
@@ -45,6 +60,62 @@
 }
 .header .userbar .userinfo .username {
   font-size: 12px;
+}
+.header .userbar .user {
+  width: 300px;
+  margin-left: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .userbar .user i {
+  font-size: 20px;
+}
+.header .userbar .user i:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.header .userbar .user__actions button {
+  background: none;
+  border: none;
+}
+.header .userbar .user__actions .dropwdown-menu {
+  background: rgb(40, 40, 40);
+  margin-top: 25px;
+  border-radius: 2px;
+  padding: 0;
+  border: none;
+}
+.header .userbar .user__actions .dropwdown-menu::before {
+  font-family: "ionicons", sans-serif;
+  content: "\f365";
+  position: absolute;
+  top: -30px;
+  right: 7px;
+  color: rgb(40, 40, 40);
+  font-size: 36px;
+}
+.header .userbar .user__actions .dropwdown-menu a {
+  color: rgb(170, 170, 170);
+  transition: all 0.2s ease;
+}
+.header .userbar .user__actions .dropwdown-menu a:hover {
+  background: none;
+  transition: all 0.2s ease;
+}
+.header .userbar .user__actions .dropwdown-menu li {
+  padding: 10px;
+  margin: 0;
+  transition: all 0.2s ease;
+}
+.header .userbar .user__actions .dropwdown-menu li:hover {
+  background: rgb(170, 170, 170);
+  transition: all 0.2s ease;
+}
+.header .userbar .user__actions .dropwdown-menu li:hover a {
+  color: rgb(200, 200, 200);
+  transition: all 0.2s ease;
 }
 
 .content {

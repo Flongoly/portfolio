@@ -1,5 +1,22 @@
 @import 'colors';
 @import 'variables';
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.3.0/nouislider.min.css');
+
+body {
+    background: $black;
+    font-family: 'roboto', sans-serif;
+
+    a {
+        color: $grey;
+
+        &:hover {
+            color: $sand;
+        }
+    }
+}
 
 .header {
     & {
@@ -56,6 +73,71 @@
             }
             .username {
                 font-size: 12px;
+            }
+        }
+        .user {
+
+            & {
+                width: 300px;
+                margin-left: auto;
+
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+            i {
+                font-size: $large;
+
+                &:hover {
+                    color: $white;
+                    cursor: pointer;
+                }
+            }
+            &__actions {
+                button {
+                    background: none;
+                    border: none;
+                }
+                .dropwdown-menu {
+                    background: $light-black;
+                    margin-top: 25px;
+                    border-radius: 2px;
+                    padding: 0;
+                    border: none;
+                    &::before {
+                        font-family: "ionicons", sans-serif;
+                        content: '\f365';
+                        position: absolute;
+                        top: -30px;
+                        right: 7px;
+                        color: $light-black;
+                        font-size: $xx-large;
+                    }
+                    a {
+                        color: $grey;
+                        transition: all 0.2s ease;
+
+                        &:hover {
+                            background: none;
+                            transition: all 0.2s ease;
+                        }
+                    }
+                    li {
+                        padding: $padding-sm;
+                        margin: 0;
+                        transition: all 0.2s ease;
+
+                        &:hover {
+                            background: $grey;
+                            transition: all 0.2s ease;
+                            a {
+                                color: $sand;
+                                transition: all 0.2s ease;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
